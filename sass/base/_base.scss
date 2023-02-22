@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @include responsive(tab-port) {
+    font-size: 56.25%;
+  }
+
+  @include responsive(mobile) {
+    font-size: 50%;
+  }
+}
+
+::selection {
+  color: #313131;
+  background-color: $color-red;
+}

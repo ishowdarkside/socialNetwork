@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="module"
+      src="scripts/mainScripts/mainController.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FSociety Welcome</title>
+  </head>
+  <body>
+    <div class="global-wrap">
+      <div class="container">
+        <div class="user-interface">
+          <h2 class="heading-primary"><span class="redDom">F</span>Society</h2>
+          <div id="userList" class="mb-big">
+            <img src="assets/mrobot.png" alt="" /><span
+              id="username"
+              class="heading-primary"
+            ></span>
+          </div>
+          <div class="list-wrap mt-big">
+            <ul class="main__list">
+              <li>
+                <img src="assets/home.svg" />
+                <a href="main.html">Home</a>
+              </li>
+              <li>
+                <img src="assets/edit.svg" alt="" />
+                <a href="#" id="editProfile">Edit Profile</a>
+              </li>
+            </ul>
+
+            <ul class="closing__list">
+              <li>
+                <img src="assets/close.svg" alt="" />
+                <a href="#" id="closeAccBtn">Close Account</a>
+              </li>
+
+              <li>
+                <img src="assets/logout.svg" alt="" />
+                <a href="#" id="logOut">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-interface">
+          <h2 class="heading-primary mb-small">Home</h2>
+          <form>
+            <textarea
+              name=""
+              id="postData"
+              cols="30"
+              rows="10"
+              placeholder="Compose new Post!"
+            ></textarea>
+
+            <button id="postBtn">+</button>
+          </form>
+
+          <div class="user-interface__posts mt-huge">
+            <!--
+              
+          
+            <div class="user-interface__post">
+              <span id="postUsername" class="mb-small">John Doe</span>
+              <p id="messageContent">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                minus a, voluptate temporibus repellendus repellat magni error
+                velit id beatae quas explicabo illum eum. Doloribus provident
+                nam earum fugiat quo?
+              </p>
+            </div>
+              -->
+          </div>
+        </div>
+        <div class="search-interface">
+          <form class="search-interface__input__wrapper">
+            <input type="text" placeholder="Search Users" />
+            <img src="assets/search.svg" alt="" />
+          </form>
+
+          <div class="search-interface__search-results mt-big"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="editProfileOverlay">
+      <button id="closeOverlay">X</button>
+      <form class="container">
+        <div>
+          <input type="text" id="editName" />
+        </div>
+        <div>
+          <input type="text" id="editMail" />
+        </div>
+        <div>
+          <input type="text" id="editPassword" />
+        </div>
+
+        <button id="saveEdit" class="btn btn--red">Save</button>
+      </form>
+    </div>
+    -->
+
+    <!--
+      
+    -->
+    <!--
+    <div class="overlayCloseAccount">
+    
+      <button id="closeThisOverlay">X</button>
+      <div class="container">
+        <form>
+          <p>
+            To Confirm that you are owner of the account, please provide your
+            account informations
+          </p>
+          <input type="text" id="inputCloseAccEmail" placeholder="Email" />
+          <input type="text" id="inputCloseAccPass" placeholder="Password" />
+          <button id="closeMyAcc" class="btn btn--red">Close my account</button>
+        </form>
+      </div>
+    </div>
+  --></body>
+</html>

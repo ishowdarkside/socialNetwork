@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+.redDom {
+  color: #e26666; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+
+.mb-small {
+  margin-bottom: 2rem; }
+
+.mb-medium {
+  margin-bottom: 3rem; }
+
+.mb-big {
+  margin-bottom: 5rem; }
+
+.mb-huge {
+  margin-bottom: 8rem; }
+
+.mt-small {
+  margin-top: 2rem; }
+
+.mt-medium {
+  margin-top: 3rem; }
+
+.mt-big {
+  margin-top: 5rem; }
+
+.mt-huge {
+  margin-top: 8rem; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+
+::selection {
+  color: #313131;
+  background-color: #e26666; }
+
+body {
+  color: #313131;
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5; }
+
+.heading-primary {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400; }
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  transition: all 0.3s;
+  cursor: pointer; }
+  .btn--red {
+    background-color: #e26666;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #e26666; }
+    .btn--red:hover {
+      background-color: transparent;
+      color: #e26666; }
+  .btn--white {
+    background-color: transparent;
+    border: 1px solid #e26666;
+    color: #e26666; }
+    .btn--white:hover {
+      background-color: #e26666;
+      color: #fff; }
+
+.header {
+  padding: 10rem 0;
+  height: 100vh; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  .header__heading {
+    font-size: 9rem;
+    letter-spacing: 3px;
+    font-family: "Playfair Display", serif; }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 50em) {
+      .header .container {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center; } }
+  .header__btn__wrapper {
+    display: flex;
+    gap: 3rem; }
+    @media only screen and (max-width: 50em) {
+      .header__btn__wrapper {
+        justify-content: center; } }
+  .header #headerImg {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
+    @media only screen and (max-width: 50em) {
+      .header #headerImg {
+        clip-path: none;
+        display: none; } }
+
+.section__about {
+  padding: 15rem 0; }
+  @media only screen and (max-width: 68.75em) {
+    .section__about .heading-primary {
+      text-align: center; } }
+  .section__about__text {
+    max-width: 60rem; }
+    @media only screen and (max-width: 68.75em) {
+      .section__about__text {
+        text-align: center;
+        margin: 0 auto; } }
+  .section__about__scrollTo {
+    color: #313131;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; }
+    .section__about__scrollTo img {
+      margin-top: 0.2rem; }
+    @media only screen and (max-width: 68.75em) {
+      .section__about__scrollTo {
+        text-align: center;
+        display: block;
+        margin-top: 1rem; } }
+  .section__about .container {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 68.75em) {
+      .section__about .container {
+        flex-direction: column; } }
+    .section__about .container img#aboutImg {
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); }
+      @media only screen and (max-width: 68.75em) {
+        .section__about .container img#aboutImg {
+          clip-path: none;
+          max-width: 60rem;
+          margin: 2rem auto 0 auto; } }
+      @media only screen and (max-width: 33.12em) {
+        .section__about .container img#aboutImg {
+          width: 100%; } }
+
+.section__testimonials {
+  padding: 10rem 0; }
+  .section__testimonials__grid__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 2rem; }
+    .section__testimonials__grid__wrapper > * {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 2rem;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem; }
+      .section__testimonials__grid__wrapper > * img {
+        justify-self: center;
+        align-self: center; }
+  .section__testimonials__grid__item__text {
+    color: #3c3c3c;
+    font-weight: 400; }
+
+.section__features {
+  padding: 10rem 0; }
+  .section__features__text {
+    max-width: 60rem; }
+  .section__features__grid__wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
+    .section__features__grid__wrapper > * {
+      background-color: #313131;
+      padding: 4rem 2rem;
+      color: #eee; }
+
+.section__register {
+  padding: 20rem 0;
+  text-align: center; }
+  .section__register div {
+    width: 100%; }
+  .section__register__text {
+    max-width: 60rem;
+    margin: 0 auto; }
+  .section__register form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    max-width: 60rem;
+    margin: 4rem auto 0 auto; }
+    .section__register form .redDom {
+      text-align: left;
+      font-size: 1.5rem;
+      padding: 0.2rem; }
+  .section__register__input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #e26666;
+    color: #313131;
+    padding: 1rem;
+    border-radius: 2rem; }
+    .section__register__input::placeholder {
+      color: #e26666; }
+  .section__register__button__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+
+.global-wrap {
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 50em) {
+    .global-wrap {
+      padding: 2rem; } }
+  .global-wrap .container {
+    width: 100%;
+    height: 85dvh;
+    height: 85vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; }
+    @media only screen and (max-width: 50em) {
+      .global-wrap .container {
+        height: 80vh; } }
+    .global-wrap .container > * {
+      padding: 0 1rem; }
+    @media only screen and (max-width: 50em) {
+      .global-wrap .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr; } }
+    .global-wrap .container .user-interface {
+      border-right: 1px solid #cccccc; }
+      .global-wrap .container .user-interface #userList {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem; }
+        .global-wrap .container .user-interface #userList .heading-primary {
+          font-size: 2.3rem; }
+      @media only screen and (max-width: 50em) {
+        .global-wrap .container .user-interface {
+          border: none; } }
+      .global-wrap .container .user-interface .list-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 35rem; }
+        @media only screen and (max-width: 50em) {
+          .global-wrap .container .user-interface .list-wrap {
+            gap: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3rem; } }
+        @media only screen and (max-width: 28.12em) {
+          .global-wrap .container .user-interface .list-wrap {
+            padding: 1rem; } }
+        @media only screen and (max-width: 21.87em) {
+          .global-wrap .container .user-interface .list-wrap {
+            flex-direction: column;
+            gap: 2rem;
+            padding: 3rem; } }
+        .global-wrap .container .user-interface .list-wrap ul li {
+          list-style: none;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          position: relative; }
+          .global-wrap .container .user-interface .list-wrap ul li a {
+            text-decoration: none;
+            color: #313131; }
+        .global-wrap .container .user-interface .list-wrap #userList {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          font-size: 3rem;
+          font-weight: 300; }
+      .global-wrap .container .user-interface__posts {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem; }
+      .global-wrap .container .user-interface__post {
+        padding: 2rem;
+        border: 1px solid #dfdfdf;
+        border-radius: 2rem;
+        position: relative; }
+        .global-wrap .container .user-interface__post #username {
+          font-weight: 600;
+          display: block; }
+        .global-wrap .container .user-interface__post #messageContent {
+          font-style: italic;
+          max-width: 60rem; }
+    .global-wrap .container .post-interface {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      position: relative; }
+      .global-wrap .container .post-interface form {
+        position: relative; }
+        .global-wrap .container .post-interface form textarea {
+          width: 100%;
+          height: auto;
+          padding: 1rem;
+          background-color: #f8f8f8;
+          border: none;
+          outline: none;
+          border-radius: 1rem;
+          resize: none;
+          overflow: hidden; }
+          .global-wrap .container .post-interface form textarea::placeholder {
+            color: #b3b3b3; }
+        .global-wrap .container .post-interface form button {
+          font-size: 2rem;
+          font-weight: 600;
+          cursor: pointer;
+          background-color: white;
+          border: 1px solid #cccccc;
+          padding: 0.5rem 2rem;
+          float: left;
+          border-radius: 100px;
+          outline: none;
+          bottom: 1rem;
+          float: right;
+          right: 1rem;
+          transition: all 0.3s; }
+          .global-wrap .container .post-interface form button:hover {
+            background-color: #313131;
+            color: #fff; }
+    .global-wrap .container .search-interface {
+      border-left: 1px solid #cccccc; }
+      .global-wrap .container .search-interface__input__wrapper {
+        position: relative; }
+        .global-wrap .container .search-interface__input__wrapper input {
+          width: 100%;
+          border: none;
+          outline: none;
+          background-color: #f8f8f8;
+          padding: 1rem;
+          border-radius: 100px; }
+          .global-wrap .container .search-interface__input__wrapper input:not(:placeholder-shown) {
+            background-color: #cccccc; }
+        .global-wrap .container .search-interface__input__wrapper img {
+          position: absolute;
+          right: 2rem;
+          top: 1rem; }
+      .global-wrap .container .search-interface__search-results {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; }
+      .global-wrap .container .search-interface__search-result {
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        background-color: rgba(49, 49, 49, 0.1); }
+        .global-wrap .container .search-interface__search-result .heading-primary {
+          line-height: 1; }
+        .global-wrap .container .search-interface__search-result #searchLastName {
+          color: rgba(49, 49, 49, 0.6); }
+      @media only screen and (max-width: 50rem) {
+        .global-wrap .container .search-interface {
+          grid-row: 2 / span 1;
+          justify-content: center;
+          padding: 3rem;
+          margin: 2rem 0;
+          border: none; } }
+
+.editProfileOverlay {
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .editProfileOverlay .container {
+    width: 100%; }
+  .editProfileOverlay #closeOverlay {
+    position: absolute;
+    top: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #cccccc;
+    right: 2rem; }
+  .editProfileOverlay form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .editProfileOverlay form input {
+      width: 100%;
+      outline: none;
+      border: 1px solid #e26666;
+      color: #313131;
+      padding: 1rem;
+      border-radius: 2rem;
+      max-width: 60rem; }
+      .editProfileOverlay form input::placeholder {
+        color: #e26666; }
+    .editProfileOverlay form button {
+      background-color: transparent;
+      align-self: flex-start; }
+      .editProfileOverlay form button:hover {
+        background-color: #e26666;
+        color: #eee; }
+  .editProfileOverlay .heading-primary {
+    color: #eeee; }
+
+.overlayCloseAccount {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999; }
+  .overlayCloseAccount form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .overlayCloseAccount form input {
+      width: 100%;
+      outline: none;
+      border: 1px solid #e26666;
+      color: #313131;
+      padding: 1rem;
+      border-radius: 2rem;
+      max-width: 60rem; }
+      .overlayCloseAccount form input::placeholder {
+        color: #e26666; }
+  .overlayCloseAccount #closeThisOverlay {
+    position: absolute;
+    top: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #cccccc;
+    right: 2rem; }
+  .overlayCloseAccount .container {
+    flex-grow: 1; }
+  .overlayCloseAccount #closeMyAcc {
+    align-self: flex-start;
+    background-color: transparent !important; }
+    .overlayCloseAccount #closeMyAcc:hover {
+      color: #eeee;
+      background-color: #e26666 !important; }
+  .overlayCloseAccount p {
+    color: #eee; }
+  .overlayCloseAccount .heading-primary {
+    color: #eeee;
+    max-width: 70rem; }
+    @media only screen and (max-width: 34.37em) {
+      .overlayCloseAccount .heading-primary {
+        font-size: 1.8rem;
+        width: 100%; } }
+
+.currUser__post {
+  background-color: rgba(49, 49, 49, 0.1); }
+
+#deletePost {
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  outline: none;
+  background-color: transparent;
+  margin-top: 5px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem; }
+  #deletePost img {
+    width: 3rem; }
+
+.section__login {
+  padding: 20rem 0; }
+  .section__login form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem; }
+    .section__login form input {
+      width: 100%;
+      outline: none;
+      border: 1px solid #e26666;
+      color: #313131;
+      padding: 1rem;
+      border-radius: 2rem;
+      max-width: 50rem; }
+      .section__login form input::placeholder {
+        color: #e26666; }

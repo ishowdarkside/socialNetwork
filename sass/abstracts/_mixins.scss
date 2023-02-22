@@ -1,0 +1,50 @@
+@mixin responsive($bp) {
+  @if ($bp == "tab-land") {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if ($bp == "tab-port") {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if ($bp == "mobile") {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
+
+@mixin responsive-custom($bp) {
+  @media only screen and(max-width:$bp) {
+    @content;
+  }
+}
+
+@mixin inputSettings {
+  width: 100%;
+  outline: none;
+  border: 1px solid $color-red;
+  color: #313131;
+  &::placeholder {
+    color: $color-red;
+  }
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+@mixin closeOverlay {
+  position: absolute;
+  top: 2rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #cccccc;
+  right: 2rem;
+}

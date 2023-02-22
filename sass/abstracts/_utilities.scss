@@ -1,0 +1,45 @@
+.redDom {
+  color: $color-red;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  @include responsive(tab-land) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.mb-small {
+  margin-bottom: 2rem;
+}
+
+.mb-medium {
+  margin-bottom: 3rem;
+}
+
+.mb-big {
+  margin-bottom: 5rem;
+}
+
+.mb-huge {
+  margin-bottom: 8rem;
+}
+
+//top
+.mt-small {
+  margin-top: 2rem;
+}
+
+.mt-medium {
+  margin-top: 3rem;
+}
+
+.mt-big {
+  margin-top: 5rem;
+}
+
+.mt-huge {
+  margin-top: 8rem;
+}
